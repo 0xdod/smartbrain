@@ -3,7 +3,7 @@ import Navbar from "./components/NavBar/Navbar";
 import Logo from "./components/Logo/Logo";
 import ImageSection from "./components/Image-Section/ImageSection";
 import Rank from "./components/Rank/Rank";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
