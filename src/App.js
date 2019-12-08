@@ -18,20 +18,27 @@ const particlesOptions = {
   }
 };
 
-function App() {
-  return (
-    <div className="app">
-      <Particles params={particlesOptions} className="particles" />
-      <div className="app-head">
-        <Navbar />
-        <Logo />
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <Particles params={particlesOptions} className="particles" />
+        <div className="app-head">
+          <Navbar />
+          <Logo />
+        </div>
+        <div className="main-body">
+          <Rank />
+          <ImageSection />
+        </div>
       </div>
-      <div className="main-body centre">
-        <Rank />
-        <ImageSection />
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;

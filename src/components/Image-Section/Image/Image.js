@@ -1,9 +1,11 @@
 import React from "react";
+import { Img } from "../../../lib/styles";
+import gopher from "./go.jpeg";
 
 function Image() {
   return (
     <div className="image-parent">
-      <img src="" alt="" />
+      <Img src={gopher} alt="" />
     </div>
   );
 }

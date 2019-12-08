@@ -13,9 +13,7 @@ function ImageSection() {
       <div className="input-div">
         <Input />
       </div>
-      <div className="image-div">
-        <Image />
-      </div>
+      <Image />
     </div>
   );
 }

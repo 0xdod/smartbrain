@@ -10,12 +10,13 @@ $head-pry-color: rgba(255, 255, 255, 0.6);
 
 body {
   background: linear-gradient(to right, #ff9068, #fd746c);
+  height: 100vh;
 }
 
 .app {
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  flex-direction: column;
 }
 
 .particles {
@@ -38,14 +39,16 @@ body {
     display: flex;
     justify-content: space-between;
     background: $head-bg-color;
-    min-height: 30%;
+    max-height: 30%;
     a {
       height: 100%;
       align-items: center;
       display: flex;
+      max-width: 50%;
       img {
         height: 60%;
-        padding: 0 2em;
+        padding: 0 1em;
+        max-width: 100%;
       }
     }
     button {
@@ -75,7 +78,7 @@ body {
 
   //-------------------------------------Layout of the logo--------------------------------------
   .logo {
-    max-height: 70%;
+    height: 70%;
     .Tilt-inner {
       height: 100%;
       display: flex;
@@ -99,14 +102,20 @@ body {
   font-size: 1em;
 
   .rank-cont {
-    height: 10%;
+    height: auto;
     font-size: 2em;
     font-weight: bold;
     color: white;
+
+    .p {
+      max-height: 100%;
+    }
   }
 
   .section-container {
-    height: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 
     p {
       padding: 1rem 0;
@@ -198,14 +207,21 @@ body {
           &:hover {
             background: rgb(241, 20, 241);
             width: 31%;
+            color: white;
           }
           &:active {
-            color: white;
             background: $head-bg-color;
             width: 29%;
           }
         }
       }
+    }
+
+    // =============================Image-div=============================================================
+    .image-parent {
+      max-width: 100%;
+      margin: 0.5em auto;
+      max-height: 100%;
     }
   }
 }
