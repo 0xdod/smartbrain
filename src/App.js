@@ -4,15 +4,29 @@ import Logo from "./components/Logo/Logo";
 import ImageSection from "./components/Image-Section/ImageSection";
 import Rank from "./components/Rank/Rank";
 import "./App.scss";
+import Particles from "react-particles-js";
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 30,
+      density: {
+        enable: true,
+        value_area: 100
+      }
+    }
+  }
+};
 
 function App() {
   return (
     <div className="app">
+      <Particles params={particlesOptions} className="particles" />
       <div className="app-head">
         <Navbar />
         <Logo />
       </div>
-      <div className="main-container centre">
+      <div className="main-body centre">
         <Rank />
         <ImageSection />
       </div>

@@ -4,7 +4,7 @@ function Headerbar() {
   return (
     <header>
       <a href="#">
-        <img className="brand-logo" src={smart} alt="brand-logo" />
+        <img src={smart} alt="brand-logo" />
       </a>
       <button>Sign Out</button>
     </header>

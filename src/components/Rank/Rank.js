@@ -3,7 +3,7 @@ import React from "react";
 function Rank() {
   return (
     <div className="rank-cont">
-      <p>{"Damilola, you are ranked 1st ........"}</p>
+      <p>{"Damilola, you are ranked #1...."}</p>
     </div>
   );
 }

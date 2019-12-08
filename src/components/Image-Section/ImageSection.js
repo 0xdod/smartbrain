@@ -5,13 +5,11 @@ import Input from "./InputField/Input";
 function ImageSection() {
   return (
     <div className="section-container">
-      <div className="text">
-        <p>
-          {
-            "This thing is supposed to identify faces of people in photos, Give it a try"
-          }
-        </p>
-      </div>
+      <p>
+        {
+          "This thing is supposed to identify faces of people in photos, Give it a try"
+        }
+      </p>
       <div className="input-div">
         <Input />
       </div>
